@@ -75,7 +75,7 @@ export default function Timeline() {
       {timelineItems.map((item, index) => (
         <motion.div
           key={index}
-          ref={(el) => (itemRefs.current[index] = el)}
+          ref={(el) => { itemRefs.current[index] = el }}
           initial={{ opacity: 0, x: -30 }}
           animate={visibleItems.has(index) ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, delay: index * 0.15, ease: [0.4, 0, 0.2, 1] }}
