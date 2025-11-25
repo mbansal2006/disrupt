@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Courier_Prime } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const courierPrime = Courier_Prime({
-  weight: ['400', '700'],
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-inter',
 })
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={courierPrime.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

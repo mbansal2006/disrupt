@@ -20,12 +20,11 @@
 }
 
 body {
-  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
   overflow-x: hidden;
-  font-feature-settings: 'liga' 0;
 }
 
 .container {
